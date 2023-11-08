@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f3e4;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 100px;
+  left: 20px;
+}
+
+body::before {
+  content: "";
+  background-image: url("./images/da.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.info {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  padding: 10px 20px;
+  border-radius: 32px;
+  background-color: #e8c2b1;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #a3a29d;
+}
+
+@media screen and (max-width: 768px) {
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .info {
+    font-size: 4vw;
+  }
+
+  .info h1 {
+    font-size: 5vw;
+  }
+
+  .info p {
+    font-size: 3.5vw;
+  }
+
+  a {
+    width: auto;
+    font-size: 3.5vw;
+    padding: 4% 8%;
+  }
+}

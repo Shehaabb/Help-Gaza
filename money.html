@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Money Donation</title>
+    <link rel="stylesheet" href="./money.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Rowdies:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Rowdies:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><img src=".\images\logo.png" alt="" /></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="money.html">Donate Money</a></li>
+        <li><a href="food-water.html">Donate Food & Water</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <div class="header">
+      <h1>Money Donation</h1>
+      <p>Your support will greatly aid in the efforts to assist Gaza</p>
+    </div>
+    <div class="container">
+      
+      <div id="donation-form">
+        <form id="donationForm" onsubmit="return validateForm()">
+          <div class="section third">
+            <h2>Personal Information</h2>
+            <div class="row">
+              <label for="name">Name</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name"
+                required
+              /><br />
+            </div>
+            <div class="row">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+              /><br />
+            </div>
+            <div class="row">
+              <label for="phone">Phone</label><br />
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter your Phone number"
+              /><br />
+            </div>
+          </div>
+          <div class="section second">
+            <h2>Payment Details</h2>
+            <div class="row">
+              <label for="ccn">Card Number</label><br />
+              <input
+                type="text"
+                id="ccn"
+                name="ccn"
+                placeholder="0000 0000 0000 0000"
+                required
+              /><br />
+            </div>
+            <div class="row">
+              <label for="expiry">Expiry Date (MM/YY)</label><br />
+              <input type="month" id="expiry" name="expiry" required /><br />
+            </div>
+            <div class="row">
+              <label for="cvv">CVV</label><br />
+              <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="123"
+                required
+              /><br />
+            </div>
+          </div>
+          <div class="section first">
+            <h2>Donation Amounts</h2>
+            <div class="row">
+              <div class="row" >
+                <input type="radio" name="amount" value="25" required /> $25
+                <input type="radio" name="amount" value="50" /> $50
+                <input type="radio" name="amount" value="100" /> $100
+              </div>
+            </div>
+            <input
+              type="number"
+              name="customAmount"
+              placeholder="Custom amount"
+              id="amount"
+            /><br />
+            <input type="submit" value="Donate Now" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./money.js"></script>
+</html>

@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  outline: none;
+  font-family: "Cairo", sans-serif;
+  font-size: 48px;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  position: relative;
+  z-index: 0;
+  background-color: #f9f3e4;
+}
+
+body::before {
+  content: "";
+  background-image: url("./images/bg.png");
+  background-color: #f9f3e4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+nav {
+  padding: 25px 10px;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: #f9f3e4;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center; 
+  flex-wrap: nowrap; 
+}
+nav a {
+  color: #3a1700;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+nav h1::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 130px;
+  right: 0;
+  height: 100px;
+  background-image: url("drip.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+h1:hover::after {
+  opacity: 1;
+}
+nav h1 {
+  color: #3a1700;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+nav img {
+  width: 100px;
+  bottom: 25px;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3c2b20;
+  font-size: x-large;
+}
+.header h1 {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.header img {
+  width: 70px;
+}
+.item {
+  width: 80%;
+  height: 160px;
+  bottom: 200px;
+  left: 120px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #32323232;
+  background-color: #fcf6e8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.header {
+  padding: 120px;
+  bottom: 100px;
+}
+
+.header h1 {
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.line {
+  width: 100px;
+  height: 6px;
+  bottom: 10px;
+  left: 0px;
+  border-radius: 60px;
+  background-color: #007bff;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.image {
+  margin: 20px;
+}
+.image img {
+  width: 120px;
+  border-radius: 15px;
+}
+.item-name {
+  bottom: 150px;
+  left: 160px;
+}
+
+.item-name h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.quantity {
+  bottom: 100px;
+  left: 160px;
+}
+
+.quantity h2 {
+  font-size: 18px;
+  color: #323232;
+}
+
+.price {
+  bottom: 160px;
+  left: 160px;
+  width: 100%;
+}
+
+.price p {
+  position: absolute;
+  font-family: "Cairo";
+  font-size: 20px;
+  color: #323232;
+}
+
+.minus,
+.counter,
+.plus {
+  width: 45px;
+  height: 45px;
+  top: 90px;
+  border: 1px solid #32323232;
+  user-select: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  right: 40px;
+}
+
+.buttons span {
+  font-family: Glory;
+  font-size: 30px;
+  font-weight: 400;
+  margin: auto;
+  left: 15px;
+  bottom: 30px;
+  padding-left: 15px;
+  padding-top: 7px;
+  cursor: pointer;
+}
+
+.counter span {
+  cursor: default;
+}
+
+.counter span {
+  font-family: Glory;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.x {
+  cursor: pointer;
+  float: right;
+  left: 110px;
+  top: 20px;
+}
+
+.x img {
+  height: 48px;
+  width: 48px;
+}
+.total-price,
+.checkout {
+  text-align: center;
+  bottom: 150px;
+}
+
+.total-price h2 {
+  font-size: 28px;
+  color: #333; 
+}
+
+.checkout a {
+  padding: 10px 10px;
+  background-color: #3a1700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 28px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout a:hover {
+  background-color: #45a049; 
+}
+
+@media screen and (max-width: 560px) {
+  nav img {
+    width: 70px;
+    bottom: 25px;
+    z-index: 1;
+  }
+  nav h1 {
+    color: #3a1700;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  nav a {
+    color: #3a1700;
+    font-family: "Manrope", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    flex-wrap: nowrap;
+  }
+  .header img {
+    width: 30px;
+  }
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .item {
+    width: 100%;
+    bottom: 200px;
+    left: 10px;
+  }
+
+  .item-name h2 {
+    font-size: 18px;
+  }
+
+  .quantity h2 {
+    font-size: 14px;
+  }
+
+  .price p {
+    font-size: 16px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    bottom: 35px;
+  }
+  ul img {
+    top: 5px;
+  }
+
+  .minus,
+  .counter,
+  .plus {
+    width: 30px;
+    height: 30px;
+    top: 90px;
+    border: 1px solid #32323232;
+    user-select: none;
+  }
+
+  .buttons span {
+    font-size: 20px;
+    left: 10px;
+    bottom: 40px;
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+
+  .x img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .x {
+    left: 60px;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  ul {
+    gap: 10px;
+  }
+  nav a {
+    font-size: 9px;
+  }
+  .x {
+    left: -40px;
+    top: 105px;
+  }
+  .minus,
+  .counter,
+  .plus {
+    width: 30px;
+    height: 30px;
+    top: 120px;
+    right: 800px;
+    border: 1px solid #32323232;
+    user-select: none;
+  }
+  .item-name h2 {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}

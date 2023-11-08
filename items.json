@@ -1,0 +1,146 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "per_page": 9,
+      "total": 18,
+      "total_pages": 2,
+      "data": [
+        {
+          "id": 1,
+          "image": "./images/water.png",
+          "name": "Water Bottles Pack",
+          "quantity": "6 bottles",
+          "price": "5.00"
+        },
+        {
+          "id": 2,
+          "image": "./images/rice.png",
+          "name": "Rice Bags",
+          "quantity": "10 bags",
+          "price": "30.00"
+        },
+        {
+          "id": 3,
+          "image": "./images/bread-loaf.png",
+          "name": "Bread Loaves",
+          "quantity": "20 loaves",
+          "price": "40.00"
+        },
+        {
+          "id": 4,
+          "image": "./images/canned-food.png",
+          "name": "Canned Food",
+          "quantity": "30 cans",
+          "price": "25.00"
+        },
+        {
+          "id": 5,
+          "image": "./images/pasta-box.png",
+          "name": "Pasta Boxes",
+          "quantity": "15 boxes",
+          "price": "15.00"
+        },
+        {
+          "id": 6,
+          "image": "./images/oil-bottle.png",
+          "name": "Cooking Oil Bottles",
+          "quantity": "8 bottles",
+          "price": "24.00"
+        },
+        {
+          "id": 7,
+          "image": "./images/milk-carton.png",
+          "name": "Milk Cartons",
+          "quantity": "20 cartons",
+          "price": "20.00"
+        },
+        {
+          "id": 8,
+          "image": "./images/flour-bag.png",
+          "name": "Flour Bags",
+          "quantity": "7 bags",
+          "price": "30.00"
+        },
+        {
+          "id": 9,
+          "image": "./images/sugar-bag.png",
+          "name": "Sugar Bags",
+          "quantity": "20 bags",
+          "price": "20.00"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "per_page": 9,
+      "total": 18,
+      "total_pages": 2,
+      "data": [
+        {
+          "id": 10,
+          "image": "./images/salt-bag.png",
+          "name": "Salt Bags",
+          "quantity": "15 bags",
+          "price": "10.00"
+        },
+        {
+          "id": 11,
+          "image": "./images/cereal-box.png",
+          "name": "Cereal Boxes",
+          "quantity": "15 boxes",
+          "price": "30.00"
+        },
+        {
+          "id": 12,
+          "image": "./images/veggie-pack.png",
+          "name": "Vegetable Packs",
+          "quantity": "20 packs",
+          "price": "35.00"
+        },
+        {
+          "id": 13,
+          "image": "./images/fruit-pack.png",
+          "name": "Fruit Packs",
+          "quantity": "9 packs",
+          "price": "40.00"
+        },
+        {
+          "id": 14,
+          "image": "./images/cheese-pack.png",
+          "name": "Cheese Packs",
+          "quantity": "10 packs",
+          "price": "30.00"
+        },
+        {
+          "id": 15,
+          "image": "./images/egg-carton.png",
+          "name": "Egg Cartons",
+          "quantity": "15 cartons",
+          "price": "25.00"
+        },
+        {
+          "id": 16,
+          "image": "./images/chicken-pack.png",
+          "name": "Chicken Packs",
+          "quantity": "10 packs",
+          "price": "50.00"
+        },
+        {
+          "id": 17,
+          "image": "./images/jam-jar.png",
+          "name": "Jam Jars",
+          "quantity": "20 jars",
+          "price": "30.00"
+        },
+        {
+          "id": 18,
+          "image": "./images/tea-box.png",
+          "name": "Tea Boxes",
+          "quantity": "15 boxes",
+          "price": "45.00"
+        }
+      ]
+    }
+  ]
+}
